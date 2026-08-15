@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  color: purple;
+}
+
+.heading {
+  background-color: var(--primary-color);
+}
