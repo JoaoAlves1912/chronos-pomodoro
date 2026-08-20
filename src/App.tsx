@@ -1,23 +1,22 @@
 import "./styles/global.css";
 import "./styles/theme.css";
 
-import { Heading } from "./components/Heading";
+import { History } from "./pages/History";
+import { Home } from "./pages/Home";
+import { NotFound } from "./pages/NotFound";
+import { Settings } from "./pages/Settings";
 
 export function App() {
-  console.log("oi");
+  const path = window.location.pathname.replace(/\/$/, "") || "/";
 
-  return (
-    <>
-      <Heading />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum
-      </p>
-    </>
-  );
+  switch (path) {
+    case "/":
+      return <Home />;
+    case "/history":
+      return <History />;
+    case "/settings":
+      return <Settings />;
+    default:
+      return <NotFound />;
+  }
 }

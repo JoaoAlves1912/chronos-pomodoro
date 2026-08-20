@@ -1,0 +1,60 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.6rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--primary);
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.brandIcon {
+  stroke-width: 2.5;
+}
+
+.main {
+  width: 100%;
+  max-width: 68rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--text-default);
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.link {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.link:hover {
+  color: var(--link-hover);
+}
+
+.quote {
+  font-style: italic;
+}

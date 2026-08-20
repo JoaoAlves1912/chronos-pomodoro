@@ -1,0 +1,116 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.6rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--primary);
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.brandIcon {
+  stroke-width: 2.5;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 48rem;
+}
+
+.timerDisplay {
+  font-size: 9.6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text-default);
+  margin: 1.6rem 0 3.2rem;
+}
+
+.taskGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.taskLabel {
+  font-size: 1.4rem;
+  color: var(--text-muted);
+}
+
+.taskInput {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--primary);
+  color: var(--text-default);
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.4rem 1.2rem;
+  outline: none;
+  width: 24rem;
+}
+
+.instruction {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  margin-bottom: 2.4rem;
+}
+
+.instruction strong {
+  color: var(--text-default);
+  font-weight: 600;
+}
+
+.cycles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3.6rem;
+}
+
+.cyclesLabel {
+  font-size: 1.4rem;
+  color: var(--text-muted);
+}
+
+.dotsGroup {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.dot {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+}
+
+.startButton {
+  width: 24rem;
+  height: 4.8rem;
+  background-color: var(--primary);
+  color: var(--text-over-primary);
+  border: none;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.startButton:hover {
+  background-color: var(--primary-light);
+}

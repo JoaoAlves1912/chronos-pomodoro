@@ -1,0 +1,96 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.6rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--primary);
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.brandIcon {
+  stroke-width: 2.5;
+}
+
+.main {
+  width: 100%;
+  max-width: 48rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--text-default);
+  margin-bottom: 0.8rem;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: var(--text-muted);
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.field label {
+  font-size: 1.4rem;
+  color: var(--text-muted);
+}
+
+.input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--primary);
+  color: var(--text-default);
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.4rem 1.2rem;
+  outline: none;
+  width: 24rem;
+}
+
+.saveButton {
+  width: 24rem;
+  height: 4.8rem;
+  margin-top: 1.6rem;
+  background-color: var(--primary);
+  color: var(--text-over-primary);
+  border: none;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.saveButton:hover {
+  background-color: var(--primary-light);
+}

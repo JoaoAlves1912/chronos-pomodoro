@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: auto;
+  padding: 3.2rem 1.6rem 2.4rem;
+  font-size: 1.3rem;
+  color: var(--text-muted);
+}
+
+.link {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.copy {
+  color: var(--text-muted);
+}
