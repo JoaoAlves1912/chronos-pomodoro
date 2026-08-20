@@ -1,75 +1,47 @@
-# React + TypeScript + Vite
+# Chronos Pomodoro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicativo moderno de gestão de tempo baseado na Técnica Pomodoro, desenvolvido em **React** com **TypeScript**, **Vite** e estilizado com **CSS Modules**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Funcionalidades
 
-## React Compiler
+- **Timer Pomodoro (Home):** Controle de ciclos de foco e descanso com mostrador digital, identificação de tarefa e visualizador de ciclos por pontos de status.
+- **Histórico de Ciclos:** Tabela completa com registro de tarefas, duração, data/hora, status (ex: interrompida/concluída) e tipo de ciclo, com opção de limpeza rápida.
+- **Configurações:** Personalização dos minutos para as etapas de foco, descanso curto e descanso longo.
+- **Página 404 Interativa:** Rota de fallback estilizada para páginas não encontradas com links rápidos de retorno.
+- **Tema Escuro Moderno:** Interface estilizada em Dark Theme com gradiente azul/preto, destaque em verde menta (_teal_) e ícones da biblioteca Lucide.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [React](https://react.dev/) - Biblioteca front-end
+- [TypeScript](https://www.typescriptlang.org/) - Tipagem estática
+- [Vite](https://vitejs.dev/) - Build tool e ambiente de desenvolvimento rápido
+- [CSS Modules](https://github.com/css-modules/css-modules) - Escopo local de estilos
+- [Lucide React](https://lucide.dev/) - Conjunto de ícones minimalistas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📁 Estrutura de Pastas
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```text
+src/
+├── assets/             # Ícones, vetores e imagens estáticas
+├── components/         # Componentes compartilhados
+│   ├── Footer/         # Rodapé padrão do app
+│   ├── Heading/        # Cabeçalho com logo e tipografia
+│   ├── Layout/         # Casca padrão reaproveitável
+│   └── Navigation/     # Barra de navegação centralizada
+├── pages/              # Telas da aplicação
+│   ├── History/        # Histórico de execuções
+│   ├── Home/           # Tela do cronômetro
+│   ├── NotFound/       # Página de erro 404
+│   └── Settings/       # Configurações de tempo
+├── styles/             # Estilização global e tokens
+│   ├── global.css      # Reset CSS e base tipográfica (62.5% rem)
+│   └── theme.css       # Variáveis de cor, gradientes e raios
+├── App.tsx             # Componente raiz da aplicação
+└── main.tsx            # Ponto de entrada React DOM
 ```
